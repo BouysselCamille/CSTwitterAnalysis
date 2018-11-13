@@ -1,4 +1,2 @@
 # twitterPredictor
-blablabl
-fzhozhfoizhfoihzoi
-ofh
+coucou c'est clara
