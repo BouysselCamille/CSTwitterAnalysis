@@ -1,4 +1,4 @@
-import twitter_collect.twitter_connection_setup as connect
+import CSTwitterAnalysis.twitter_collect.twitter_connection_setup as connect
 from tweepy.streaming import StreamListener
 import tweepy
 
