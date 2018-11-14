@@ -16,7 +16,7 @@ def collect_by_user(user_id):
     for status in statuses:
        print(status.text)
     return statuses
-#collect_by_user(1976143068)
+collect_by_user(1976143068)
 
 import tweepy
 from tweepy.streaming import StreamListener

@@ -21,9 +21,6 @@ def get_candidate_queries(num_candidate, file_path):
 #print(get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData'))
 
 
-from tweet_collect.search import collect
-
-from tweet_collect.twitter_connection_setup as connect
 
 
 def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
@@ -45,6 +42,14 @@ def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
 
 
 from tweet_collect.twitter_connection_setup as connect
+
+def collect_by_user(user_id):
+    connexion = connect.twitter_setup()
+    statuses = connexion.user_timeline(id = user_id, count = 200)
+    for status in statuses:
+       print(status.text)
+    return statuses
+collect_by_user(1976143068)
 
 def get_replies_to_candidate(num_candidate):
     total_replies=[]
