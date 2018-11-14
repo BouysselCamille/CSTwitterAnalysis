@@ -18,4 +18,3 @@ def twitter_setup():
     api = tweepy.API(auth)
     return api
 
-print(twitter_setup())
