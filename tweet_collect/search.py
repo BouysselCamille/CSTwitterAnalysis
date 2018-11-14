@@ -3,17 +3,18 @@ import tweet_collect.twitter_connection_setup as connect
 
 def collect(keyword):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(keyword,language="french",rpp=100)
-    for tweet in tweets:
-        print(tweet.text)
+    tweets = connexion.search(keyword,language="french",rpp=1)
+    #for tweet in tweets:
+    #    print(tweet.text)
     return(tweets)
-#collect()
+
+
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
     statuses = connexion.user_timeline(id = user_id, count = 200)
     for status in statuses:
-        print(status.text)
+       print(status.text)
     return statuses
 #collect_by_user(1976143068)
 

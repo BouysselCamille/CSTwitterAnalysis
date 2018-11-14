@@ -10,8 +10,6 @@ def get_candidate_queries(num_candidate, file_path):
     :return: (list) a list of string queries that can be done to the search API independently
     """
     os.chdir(file_path)
-    print(os.getcwd())
-    print(os.listdir(file_path))
     hashtags=open(file_path+"/hashtag_candidate_"+str(num_candidate)+".txt",'r')
     print(hashtags)
     keywords=open(file_path+"/keywords_candidate_"+str(num_candidate)+".txt",'r')
@@ -20,12 +18,12 @@ def get_candidate_queries(num_candidate, file_path):
 
 
 
-print(get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData'))
+#print(get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData'))
 
 
-#from tweet_collect.search import collect
-#from tweet_collect.twitter_connection_setup import twitter_setup
-connexion = twitter_setup()
+from tweet_collect.search import collect
+
+from tweet_collect.twitter_connection_setup as connect
 
 
 def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
@@ -37,9 +35,27 @@ def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
     """
     print(queries_n)
     tweets=[]
+    connexion = connect.twitter_setup()
     for query in queries_n :
         tweets.append(collect(query))
     return tweets
 
 #queries_1976143068=get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData')
 #get_tweets_from_candidates_search_queries(queries_1976143068, connexion)
+
+
+from tweet_collect.twitter_connection_setup as connect
+
+def get_replies_to_candidate(num_candidate):
+    total_replies=[]
+    connexion = connect.twitter_setup()
+    statuses = connexion.user_timeline(id = num_candidate, count = 200)
+    for status in statuses:
+        print(status.text)
+        id_status=status.id
+        replies = connexion.search("Macron" ,in_reply_to_status_id_str=id_status,language="french",rpp=1)
+        for reply in replies:
+            total_replies.append(reply.text)
+    return total_replies
+
+get_replies_to_candidate(1976143068)
