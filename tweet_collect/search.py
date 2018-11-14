@@ -1,11 +1,12 @@
 import tweet_collect.twitter_connection_setup as connect
 
 
-def collect():
+def collect(keyword):
     connexion = connect.twitter_setup()
-    tweets = connexion.search("Emmanuel Macron",language="french",rpp=100)
+    tweets = connexion.search(keyword,language="french",rpp=100)
     for tweet in tweets:
         print(tweet.text)
+    return(tweets)
 #collect()
 
 def collect_by_user(user_id):
