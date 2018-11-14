@@ -1,4 +1,5 @@
 #fonctions nécessaires pour une connection à l'API Twitter
+
 import tweepy
 # We import our access keys:
 from tweet_collection.credentials import *
