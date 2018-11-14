@@ -1,4 +1,5 @@
 import os
+import tweepy
 
 def get_candidate_queries(num_candidate, file_path):
     """
@@ -41,7 +42,7 @@ def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
 #get_tweets_from_candidates_search_queries(queries_1976143068, connexion)
 
 
-from tweet_collect.twitter_connection_setup as connect
+import tweet_collect.twitter_connection_setup as connect
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
@@ -49,18 +50,21 @@ def collect_by_user(user_id):
     for status in statuses:
        print(status.text)
     return statuses
-collect_by_user(1976143068)
+#collect_by_user(1976143068)
 
 def get_replies_to_candidate(num_candidate):
-    total_replies=[]
-    connexion = connect.twitter_setup()
-    statuses = connexion.user_timeline(id = num_candidate, count = 200)
-    for status in statuses:
-        print(status.text)
-        id_status=status.id
-        replies = connexion.search("Macron" ,in_reply_to_status_id_str=id_status,language="french",rpp=1)
-        for reply in replies:
-            total_replies.append(reply.text)
-    return total_replies
+    try :
+        total_replies=[]
+        connexion = connect.twitter_setup()
+        statuses = connexion.user_timeline(id = num_candidate, count = 200)
+        for status in statuses:
+            id_status=status.id
+            replies = connexion.search("Macron" ,in_reply_to_status_id_str=id_status,language="french",rpp=1)
+            for reply in replies:
+                total_replies.append(reply.text)
+                print(reply.text)
+        return total_replies
+    except tweepy.error.RateLimitError:
+        print("Limite de stream de tweet atteinte, revient dans 1h")
 
 get_replies_to_candidate(1976143068)
