@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb05e7e-fd30-4857-8220-1ad00afd820e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/atomicwrites-1.2.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/atomicwrites-1.2.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/attrs-18.2.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/attrs-18.2.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/more_itertools-4.3.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/more_itertools-4.3.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pluggy-0.8.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pluggy-0.8.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/py-1.7.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/py-1.7.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pytest-3.10.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.6/site-packages/pytest-3.10.1.dist-info/RECORD" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +14,7 @@
     <session id="855955544">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -32,7 +24,8 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
         <counts>
-          <entry key="git.branch.checkout.local" value="2" />
+          <entry key="git.branch.checkout.local" value="4" />
+          <entry key="git.branch.merge" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -54,7 +47,7 @@
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="pub" value="1" />
-          <entry key="py" value="27" />
+          <entry key="py" value="28" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -62,58 +55,10 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="27" />
+          <entry key="Python" value="28" />
         </counts>
       </usages-collector>
     </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_collect/twitter_connection_setup.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#60#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_tweet_activity.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_collect/search.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-707">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <marker date="1542213847510" expanded="true" signature="1037:1042" ph="..." />
-                <marker date="1542213847510" expanded="true" signature="1037:1413" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -126,7 +71,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="branche1" />
       </map>
     </option>
   </component>
@@ -173,17 +118,7 @@
             <path>
               <item name="twitterPredictor" type="b2602c69:ProjectViewProjectNode" />
               <item name="twitterPredictor" type="462c0819:PsiDirectoryNode" />
-              <item name="CandidateData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitterPredictor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitterPredictor" type="462c0819:PsiDirectoryNode" />
-              <item name="tweet_collect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twitterPredictor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twitterPredictor" type="462c0819:PsiDirectoryNode" />
-              <item name="tweet_collection" type="462c0819:PsiDirectoryNode" />
+              <item name="WorkingDocs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,13 +132,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tweet_collection" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tweet_collect" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tweet_collect/.pytest_cache" />
-      <recent name="$PROJECT_DIR$/tweet_collection" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tweet_collection" />
     </key>
   </component>
@@ -219,7 +154,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.collect_candidate_actuality_tweets">
+  <component name="RunManager">
     <configuration name="collect_candidate_actuality_tweets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="twitterPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -335,10 +270,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.collect_candidate_actuality_tweets" />
-        <item itemvalue="Python.search" />
         <item itemvalue="Python.queries" />
-        <item itemvalue="Python.twitter_connection_setup" />
         <item itemvalue="Python.credetials_vide" />
+        <item itemvalue="Python.search" />
+        <item itemvalue="Python.twitter_connection_setup" />
       </list>
     </recent_temporary>
   </component>
@@ -352,7 +287,7 @@
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3275862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -429,13 +364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/key.pub">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -446,17 +375,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py" />
     <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-707">
           <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1542213847510" expanded="true" signature="1037:1042" ph="..." />
-            <marker date="1542213847510" expanded="true" signature="1037:1413" ph="..." />
           </folding>
         </state>
       </provider>
