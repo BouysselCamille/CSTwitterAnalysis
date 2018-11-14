@@ -3,10 +3,10 @@ import tweet_collect.twitter_connection_setup as connect
 
 def collect():
     connexion = connect.twitter_setup()
-    tweets = connexion.search("@EmmanuelMacron",language="french",rpp=100)
+    tweets = connexion.search("Emmanuel Macron",language="french",rpp=100)
     for tweet in tweets:
         print(tweet.text)
-
+#collect()
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
@@ -14,7 +14,7 @@ def collect_by_user(user_id):
     for status in statuses:
         print(status.text)
     return statuses
-#collect_by_user(25073877)
+#collect_by_user(1976143068)
 
 import tweepy
 from tweepy.streaming import StreamListener
@@ -42,4 +42,6 @@ def collect_by_streaming():
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
     stream.filter(track=['Emmanuel Macron'])
 
-collect_by_streaming()
+#collect_by_streaming()
+
+
