@@ -61,10 +61,27 @@ def get_replies_to_candidate(num_candidate):
             id_status=status.id
             replies = connexion.search("Macron" ,in_reply_to_status_id_str=id_status,language="french",rpp=1)
             for reply in replies:
-                total_replies.append(reply.text)
-                print(reply.text)
+                if reply.text not in total_replies:
+                    total_replies.append(reply.text)
+                    print(reply.text)
         return total_replies
     except tweepy.error.RateLimitError:
         print("Limite de stream de tweet atteinte, revient dans 1h")
 
 get_replies_to_candidate(1976143068)
+
+def get_retweets_of_candidate(num_candidate):
+    try :
+        total_replies=[]
+        connexion = connect.twitter_setup()
+        statuses = connexion.user_timeline(id = num_candidate, count = 200)
+        for status in statuses:
+            id_status=status.id
+            replies = connexion.search("Macron" ,in_reply_to_status_id_str=id_status,language="french",rpp=1)
+            for reply in replies:
+                if reply.text not in total_replies:
+                    total_replies.append(reply.text)
+                    print(reply.text)
+        return total_replies
+    except tweepy.error.RateLimitError:
+        print("Limite de stream de tweet atteinte, revient dans 1h")
