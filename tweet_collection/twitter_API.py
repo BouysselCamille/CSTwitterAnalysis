@@ -2,9 +2,9 @@ import CSTwitterAnalysis.twitter_collect.twitter_connection_setup as connect
 from tweepy.streaming import StreamListener
 import tweepy
 
-def collect():
+def collect(mot_cle):
     connexion = connect.twitter_setup()
-    tweets = connexion.search("@EmmanuelMacron",language="french",rpp=100)
+    tweets = connexion.search(mot_cle,language="french",rpp=100)
     tweet_real = []
     for tweet in tweets:
         if tweet not in tweet_real:
