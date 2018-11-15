@@ -1,5 +1,7 @@
 import os
 import tweepy
+import tweet_collect.twitter_connection_setup as connect
+connexion=connect.twitter_setup()
 
 def get_candidate_queries(num_candidate, file_path):
     """
@@ -12,45 +14,27 @@ def get_candidate_queries(num_candidate, file_path):
     """
     os.chdir(file_path)
     hashtags=open(file_path+"/hashtag_candidate_"+str(num_candidate)+".txt",'r')
-    print(hashtags)
     keywords=open(file_path+"/keywords_candidate_"+str(num_candidate)+".txt",'r')
     list_of_querries=hashtags.readlines()+keywords.readlines()
     return [word[:-1] for word in list_of_querries] #on enlève les retours à la ligne
 
 
-
 #print(get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData'))
 
 
+def get_tweets_from_candidates_search_queries(queries, twitter_api):
+    all_tweets=[]
+    for query in queries:
+        tweets = twitter_api.search(query,language="french",rpp=1)
+        for tweet in tweets:
+            all_tweets.append(tweet)
+    return all_tweets
+
+queries_1976143068=get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData')
+#print(queries_1976143068)
+#print(get_tweets_from_candidates_search_queries(queries_1976143068, connexion))
 
 
-def get_tweets_from_candidates_search_queries(queries_n, twitter_api):
-    """
-    récupére et renvoie les tweets répondant aux différentes requêtes.
-    :param queries: (list) a list of string queries that can be done to the search API independently
-    :param twitter_api: une instance de connexion
-    :return: (list) a list of tweets that answer the querries
-    """
-    print(queries_n)
-    tweets=[]
-    connexion = connect.twitter_setup()
-    for query in queries_n :
-        tweets.append(collect(query))
-    return tweets
-
-#queries_1976143068=get_candidate_queries(1976143068,'/Users/camille/PycharmProjects/twitterPredictor/CandidateData')
-#get_tweets_from_candidates_search_queries(queries_1976143068, connexion)
-
-
-import tweet_collect.twitter_connection_setup as connect
-
-def collect_by_user(user_id):
-    connexion = connect.twitter_setup()
-    statuses = connexion.user_timeline(id = user_id, count = 200)
-    for status in statuses:
-       print(status.text)
-    return statuses
-#collect_by_user(1976143068)
 
 def get_replies_to_candidate(num_candidate):
     try :
@@ -93,6 +77,5 @@ def stream_tweets_about_candidate(num_candidate):
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
     return (stream.filter(track=['Emmanuel Macron']))
 
-tweets=stream_tweets_about_candidate(1976143068)
+#tweets=stream_tweets_about_candidate(1976143068)
 
-print(tweets)
