@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb05e7e-fd30-4857-8220-1ad00afd820e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tweet_collection/credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/twitterPredictor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twitterPredictor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet_collection/_main_.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_collection/_main_.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,14 +31,14 @@
         <counts>
           <entry key="key" value="1" />
           <entry key="md" value="106" />
-          <entry key="py" value="2506" />
+          <entry key="py" value="2522" />
           <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="197" />
-          <entry key="Python" value="2506" />
+          <entry key="Python" value="2522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -51,7 +47,7 @@
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="pub" value="1" />
-          <entry key="py" value="34" />
+          <entry key="py" value="35" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -59,14 +55,14 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="34" />
+          <entry key="Python" value="35" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="268">
@@ -79,9 +75,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tweet_collection/_main_.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <marker date="1542270751740" expanded="true" signature="35:40" ph="..." />
+                <marker date="1542270751740" expanded="true" signature="35:118" ph="..." />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -159,6 +163,7 @@
         <option value="$PROJECT_DIR$/tweet_collect/s.py" />
         <option value="$PROJECT_DIR$/tweet_collect/search.py" />
         <option value="$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py" />
+        <option value="$PROJECT_DIR$/tweet_collection/_main_.py" />
       </list>
     </option>
   </component>
@@ -353,12 +358,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="23" width="1332" height="760" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24942791" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24942791" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3275862" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,6 +465,17 @@
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1542270346413" expanded="true" signature="3127:3132" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_collection/_main_.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1542270751740" expanded="true" signature="35:40" ph="..." />
+            <marker date="1542270751740" expanded="true" signature="35:118" ph="..." />
           </folding>
         </state>
       </provider>
