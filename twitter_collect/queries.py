@@ -1,7 +1,9 @@
 import CSTwitterAnalysis.tweet_collection.twitter_API as api
 import os
 
-"""On se rend dans le bon fichier grâce à un chemin relatif puir on ouvre les fichiers, on liste les mots avec readlines()
+"""Cette fonction permet de créer une liste de mots qu'on utilisera dans les searchs à partir du numéro du candidat et de 2 dossiers
+contenant des mots-clé et des hashtag.
+On se rend dans le bon fichier grâce à un chemin relatif puis on ouvre les fichiers, on liste les mots avec readlines()
 et on les reliste en supprimant /n"""
 
 def get_candidate_queries(num_candidate, file_path):

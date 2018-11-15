@@ -2,6 +2,9 @@ import CSTwitterAnalysis.twitter_collect.twitter_connection_setup as connect
 from tweepy.streaming import StreamListener
 import tweepy
 
+
+"""cette fonction permet de collecter tous les tweets qui ont un rapport avec le mot clé parmi les 100 derniers tweets"""
+
 def collect(mot_cle):
     connexion = connect.twitter_setup()
     tweets = connexion.search(mot_cle,language="french",rpp=100)
@@ -10,6 +13,7 @@ def collect(mot_cle):
         if tweet not in tweet_real:
             tweet_real.append(tweet)
             print(tweet.text)
+    return tweet_real
 
 #collect()
 
@@ -40,7 +44,6 @@ class StdOutListener(StreamListener):
 
 
 def collect_by_streaming():
-
     connexion = connect.twitter_setup()
     listener = StdOutListener()
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
