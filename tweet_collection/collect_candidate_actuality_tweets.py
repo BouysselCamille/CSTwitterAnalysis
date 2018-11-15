@@ -67,4 +67,32 @@ def get_replies_to_candidate(num_candidate):
     except tweepy.error.RateLimitError:
         print("Limite de stream de tweet atteinte, revient dans 1h")
 
-get_replies_to_candidate(1976143068)
+#get_replies_to_candidate(1976143068)
+
+
+
+import tweepy
+from tweepy.streaming import StreamListener
+class StdOutListener(StreamListener):
+
+    def on_data(self, data):
+        print(data)
+        return True
+
+    def on_error(self, status):
+        if  str(status) == "420":
+            print(status)
+            print("You exceed a limited number of attempts to connect to the streaming API")
+            return False
+        else:
+            return True
+
+def stream_tweets_about_candidate(num_candidate):
+    connexion = connect.twitter_setup()
+    listener = StdOutListener()
+    stream=tweepy.Stream(auth = connexion.auth, listener=listener)
+    return (stream.filter(track=['Emmanuel Macron']))
+
+tweets=stream_tweets_about_candidate(1976143068)
+
+print(tweets)
