@@ -3,11 +3,15 @@ from textblob import TextBlob
 import CSTwitterAnalysis.twitter_collect.twitter_connection_setup as connect
 from tweepy.streaming import StreamListener
 import tweepy
+from nltk.corpus import stopwords
 from CSTwitterAnalysis.tweet_collection.twitter_API import collect_un_tweet
+import nltk
+nltk.download('stopwords')
+
 
 tweet = collect_un_tweet('Trump')
 print(tweet.text)
-print("ok")
+#print("ok")
 
 
 """fonction qui extrait le vocabulaire d'un tweet"""
@@ -63,4 +67,15 @@ def supprime_mots_interdits(tweet):
     #new_tweet_words.join(' ')
     return new_tweet_words
 
-print(supprime_mots_interdits(tweet))
+#print(supprime_mots_interdits(tweet))
+
+def supprime_mots_trop_communs(tweet):
+    words = extract_word_from_tweet(tweet)
+    stop_words = set(stopwords.words('english'))
+    new_words = []
+    for word in words:
+        if word not in stop_words:
+            new_words.append(word)
+    return new_words
+
+print(supprime_mots_trop_communs(tweet))
