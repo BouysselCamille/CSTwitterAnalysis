@@ -7,12 +7,11 @@ import pandas as pd
 import numpy as np
 from tweet_analysis.sentiment_analysis import collect_to_pandas_dataframe
 import matplotlib.pyplot as plt
-
-import numpy as np
-import pandas as pd
 import seaborn as sns
-sns.set(style="whitegrid")
 
+
+sns.set(style="whitegrid")
+#Import Data
 data,tweets=collect_to_pandas_dataframe("@realDonaldTrump")
 dates=data['Date']
 values=data['Sentiment']
