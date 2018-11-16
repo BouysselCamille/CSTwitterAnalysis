@@ -6,7 +6,7 @@ import nltk
 import tweet_collect.twitter_connection_setup as connect
 connexion=connect.twitter_setup()
 
-tweets = connexion.search("@realDonaldTrump",language="english",rpp=1)
+tweets = connexion.search("@realDonaldTrump",language="english",rpp=1,count=100)
 list_of_text_to_lemmatize=[]
 for tweet in tweets :
     words=TextBlob(tweet.text).words

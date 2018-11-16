@@ -13,7 +13,7 @@ connexion=connect.twitter_setup()
 #Get Tweets
 def collect_to_pandas_dataframe(querry):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(querry,language="en",rpp=100)
+    tweets = connexion.search(querry,language="en",rpp=100,count=100)
     data = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['tweet_textual_content'])
     data['len']  = np.array([len(tweet.text) for tweet in tweets])
     data['ID']   = np.array([tweet.id for tweet in tweets])
@@ -24,7 +24,7 @@ def collect_to_pandas_dataframe(querry):
     data['Sentiment']= np.array([TextBlob(tweet.text).sentiment.polarity for tweet in tweets])
     return data,tweets
 data,tweets=collect_to_pandas_dataframe("@realDonaldTrump")
-
+print(data)
 def tweets_polarity_pos_neu_neg(tweets):
     pos_tweets=[]
     neg_tweets=[]
@@ -47,6 +47,6 @@ def tweets_polarity(tweets):
         popularity.append((date,sentiment))
     return popularity
 #Results
-#print("Percentage of positive tweets: {}%".format(len(pos_tweets)*100/len(data['tweet_textual_content'])))
-#print("Percentage of neutral tweets: {}%".format(len(neu_tweets)*100/len(data['tweet_textual_content'])))
-#print("Percentage de negative tweets: {}%".format(len(neg_tweets)*100/len(data['tweet_textual_content'])))
+print("Percentage of positive tweets: {}%".format(len(pos_tweets)*100/len(data['tweet_textual_content'])))
+print("Percentage of neutral tweets: {}%".format(len(neu_tweets)*100/len(data['tweet_textual_content'])))
+print("Percentage de negative tweets: {}%".format(len(neg_tweets)*100/len(data['tweet_textual_content'])))
