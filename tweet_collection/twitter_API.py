@@ -7,7 +7,7 @@ import tweepy
 
 def collect(mot_cle):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(mot_cle,language="french",rpp=1, pp=1)
+    tweets = connexion.search(mot_cle,language="french",rpp=100, pp=10)
     tweet_status = []
     #compteur = 0
     for tweet in tweets:
@@ -19,9 +19,10 @@ def collect(mot_cle):
     return tweet_status
 
 
-tweet = collect('Macron')
+#tweet = collect('Trump')
 
-#C'est étrange mais mon programme collecte systématiquement 15 tweets, mais ne m'en sort qu'un à la fin...
+
+#C'est étrange mais mon programme collecte systématiquement 15 tweets...
 
 
 """collecte les 200 derniers tweets de la personne à partir de son user_id (renvoie les status des tweets)"""
@@ -65,10 +66,15 @@ def collect_by_streaming():
 
 def collect_un_tweet(mot_cle):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(mot_cle,language="french",rpp=1, pp=1)
+    tweets = connexion.search(mot_cle,language="french",rpp=100, pp=1)
     tweet_real = []
     for tweet in tweets:
         if tweet not in tweet_real:
             tweet_real.append(tweet)
-            print(tweet.text)
-    return tweet_real
+            #print(tweet.text)
+            #print('ok')
+    return tweet_real[0]
+
+#tweet = collect_un_tweet('Macron')
+#print('ok')
+#print(tweet)

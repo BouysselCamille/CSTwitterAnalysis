@@ -23,6 +23,6 @@ def store_tweets(tweets,file_name):
         for line in file:
             print(line)
 
-store_tweets(tweets_Donald_Trump, 'filename')
+#store_tweets(tweets_Donald_Trump, 'filename')
 
 
