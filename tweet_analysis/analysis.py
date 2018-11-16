@@ -42,3 +42,13 @@ plus_like=np.max(data['Likes'])
 rt=data[data.Likes == plus_like].index[0]
 print("The most liked tweet is : \n{}".format(data['tweet_textual_content'][rt]))
 print("Number of likes: {}.\n".format(plus_like))
+
+import matplotlib.pyplot as plt
+tfav = pd.Series(data=data['Likes'].values, index=data['Date'])
+tret = pd.Series(data=data['RTs'].values, index=data['Date'])
+
+# Likes vs retweets visualization:
+tfav.plot(figsize=(16,4), label="Likes", legend=True)
+tret.plot(figsize=(16,4), label="Retweets", legend=True)
+
+plt.show()
