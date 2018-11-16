@@ -7,16 +7,24 @@ import tweepy
 
 def collect(mot_cle):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(mot_cle,language="french",rpp=100)
-    tweet_real = []
+    tweets = connexion.search(mot_cle,language="french",rpp=1, pp=1)
+    tweet_status = []
+    #compteur = 0
     for tweet in tweets:
-        if tweet not in tweet_real:
-            tweet_real.append(tweet)
+        if tweet.text not in [tweet_deja_pris.text for tweet_deja_pris in tweet_status] :
+            tweet_status.append(tweet)
             print(tweet.text)
-    return tweet_real
+            #compteur += 1
+    #print(compteur)
+    return tweet_status
 
-#collect()
 
+tweet = collect('Macron')
+
+#C'est étrange mais mon programme collecte systématiquement 15 tweets, mais ne m'en sort qu'un à la fin...
+
+
+"""collecte les 200 derniers tweets de la personne à partir de son user_id (renvoie les status des tweets)"""
 
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
@@ -50,4 +58,17 @@ def collect_by_streaming():
     stream=tweepy.Stream(auth = connexion.auth, listener=listener)
     stream.filter(track=['Emmanuel Macron'])
 
+#collect_by_streaming()
 
+
+"""fonction qui collecte un seul tweet"""
+
+def collect_un_tweet(mot_cle):
+    connexion = connect.twitter_setup()
+    tweets = connexion.search(mot_cle,language="french",rpp=1, pp=1)
+    tweet_real = []
+    for tweet in tweets:
+        if tweet not in tweet_real:
+            tweet_real.append(tweet)
+            print(tweet.text)
+    return tweet_real

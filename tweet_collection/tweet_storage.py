@@ -3,6 +3,8 @@ from CSTwitterAnalysis.tweet_collection.twitter_API import collect_by_user
 
 tweets_Donald_Trump = collect_by_user(25073877)
 
+"""fonction qui à partir des tweets status, crée un fichier json contenant le tweet (texte, date au format string,
+hashtags, id) repéré par son id"""
 
 def store_tweets(tweets,file_name):
     dico = {}
