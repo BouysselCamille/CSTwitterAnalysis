@@ -8,7 +8,7 @@ connexion=connect.twitter_setup()
 
 def collect_to_pandas_dataframe(querry):
     connexion = connect.twitter_setup()
-    tweets = connexion.search(querry,language="fr",rpp=100)
+    tweets = connexion.search(querry,created_at="Wed Aug 27 13:08:45 +0000 2008",language="fr",rpp=100)
     data = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['tweet_textual_content'])
     data['len']  = np.array([len(tweet.text) for tweet in tweets])
     data['ID']   = np.array([tweet.id for tweet in tweets])
@@ -40,8 +40,8 @@ print("Published {}.\n".format(plus_recent))
 #le plus liké
 plus_like=np.max(data_emmanuel['Likes'])
 rt=data_emmanuel[data_emmanuel.Likes == plus_like].index[0]
-print("The most liked tweet is : \n{}".format(data_emmanuel['tweet_textual_content'][rt]))
-print("Number of likes: {}.\n".format(plus_like))
+#print("The most liked tweet is : \n{}".format(data_emmanuel['tweet_textual_content'][rt]))
+#print("Number of likes: {}.\n".format(plus_like))
 
 
 #####visualisation####
@@ -50,17 +50,17 @@ tfav = pd.Series(data=data_emmanuel['Likes'].values, index=data_emmanuel['Date']
 tret = pd.Series(data=data_emmanuel['RTs'].values, index=data_emmanuel['Date'])
 
 # Likes vs retweets visualization:
-tfav.plot(figsize=(16,4), label="Likes", legend=True)
-tret.plot(figsize=(16,4), label="Retweets", legend=True)
+#tfav.plot(figsize=(16,4), label="Likes", legend=True)
+#tret.plot(figsize=(16,4), label="Retweets", legend=True)
 
-plt.show()
-plt.close()
+#plt.show()
+#plt.close()
 
 #Trump vs Macron
 tret_macron=pd.Series(data=data_emmanuel['RTs'].values, index=data_emmanuel['Date'])
 tret_trump=pd.Series(data=data_trump['RTs'].values, index=data_trump['Date'])
 
-tret_macron.plot(figsize=(16,4), label="Macron", legend=True)
-tret_trump.plot(figsize=(16,4), label="Trump", legend=True)
+#tret_macron.plot(figsize=(16,4), label="Macron", legend=True)
+#tret_trump.plot(figsize=(16,4), label="Trump", legend=True)
 
-plt.show()
+#plt.show()
