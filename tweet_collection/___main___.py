@@ -1,5 +1,6 @@
-import numpy as np
+import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 import CSTwitterAnalysis.twitter_collect.twitter_connection_setup as connect
 
 def collect_to_pandas_dataframe():
@@ -14,4 +15,4 @@ def collect_to_pandas_dataframe():
     data['RTs']    = np.array([tweet.retweet_count for tweet in tweets])
     return data
 
-#data = collect_to_pandas_dataframe()
+print(data = collect_to_pandas_dataframe())
