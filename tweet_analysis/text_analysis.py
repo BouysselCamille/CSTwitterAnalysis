@@ -1,5 +1,6 @@
 from textblob import TextBlob
 from textblob import Word
+import textblob
 import nltk
 
 import tweet_collect.twitter_connection_setup as connect
@@ -16,16 +17,20 @@ for tweet in tweets :
 
 
 list_of_word_lemmatized=[]
-list_of_forgiden_caracters=["…",'/','’','‘',"_","1","2","3","4","5","6","7","8","9","'","😘",'”','“','http','😂']
+list_of_forgiden_caracters=["…",'/','’','‘',"_","1","2","3","4","5","6","7","8","9","'","😘",'”','“','http','😂','🤔','✔','‼']
+
 
 for word in list_of_text_to_lemmatize:
+    R=True
     word=word.lower()
+
     for carac in list_of_forgiden_caracters:
         if carac in word:
-            continue
-    if len(word)>=3 and Word(word).detect_language()!='en':
+            R=False
+    if not R:
         continue
-    if TextBlob(word).tags[0][1][0]=='V':
+
+    elif TextBlob(word).tags[0][1][0]=='V':
         word_lemmatized=Word(word).lemmatize("v")
     else:
         word_lemmatized=Word(word).lemmatize()

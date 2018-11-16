@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb05e7e-fd30-4857-8220-1ad00afd820e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tweet_collection/credentials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweet_analysis/text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_analysis/text_analysis.py" afterDir="false" />
     </list>
@@ -18,12 +17,12 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="9" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -36,15 +35,15 @@
           <entry key="json" value="3" />
           <entry key="key" value="1" />
           <entry key="md" value="106" />
-          <entry key="py" value="5578" />
-          <entry key="txt" value="94" />
+          <entry key="py" value="6286" />
+          <entry key="txt" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="3" />
-          <entry key="PLAIN_TEXT" value="201" />
-          <entry key="Python" value="5578" />
+          <entry key="PLAIN_TEXT" value="203" />
+          <entry key="Python" value="6286" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,7 +53,7 @@
           <entry key="md" value="1" />
           <entry key="png" value="1" />
           <entry key="pub" value="1" />
-          <entry key="py" value="59" />
+          <entry key="py" value="61" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -63,7 +62,7 @@
           <entry key="Image" value="1" />
           <entry key="JSON" value="12" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="58" />
+          <entry key="Python" value="60" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -74,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="66" />
+            <state relative-caret-position="405">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="66" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
                 <marker date="1542272844561" expanded="true" signature="1103:1104" ph="..." />
@@ -88,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/tweet_collection/_main_.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -96,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" lean-forward="true" selection-start-line="8" selection-end-line="19" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="58" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -111,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_analysis/text_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-end-line="8" selection-end-column="70" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -120,9 +119,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#11#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -170,6 +175,7 @@
         <option value="$PROJECT_DIR$/tweet_collection/_main_.py" />
         <option value="$PROJECT_DIR$/tweet_analysis/analysis.py" />
         <option value="$PROJECT_DIR$/tweet_analysis/text_analysis.py" />
+        <option value="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" />
       </list>
     </option>
   </component>
@@ -185,7 +191,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,6 +212,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -215,14 +221,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tweet_collection" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tweet_collection" />
       <recent name="$PROJECT_DIR$/tweet_collect" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tweet_collect/.pytest_cache" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tweet_collection" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -237,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_analysis">
+  <component name="RunManager" selected="Python.sentiment_analysis">
     <configuration name="_main_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="twitterPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -301,7 +307,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sentiment_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="twitterPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -309,11 +315,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tweet_collect" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tweet_analysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tweet_collect/search.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,19 +350,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.search" />
       <item itemvalue="Python.collect_candidate_actuality_tweets" />
       <item itemvalue="Python._main_" />
       <item itemvalue="Python.analysis" />
       <item itemvalue="Python.text_analysis" />
+      <item itemvalue="Python.sentiment_analysis" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.sentiment_analysis" />
         <item itemvalue="Python.text_analysis" />
         <item itemvalue="Python.analysis" />
         <item itemvalue="Python._main_" />
         <item itemvalue="Python.collect_candidate_actuality_tweets" />
-        <item itemvalue="Python.search" />
       </list>
     </recent_temporary>
   </component>
@@ -364,14 +370,13 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="109" y="60" width="1331" height="760" extended-state="0" />
-    <editor active="true" />
+    <frame x="109" y="57" width="1331" height="760" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24961832" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3275862" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3275862" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3275862" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +415,8 @@
     <MESSAGE value="fonctionnalité 3" />
     <MESSAGE value="fonctionnalité 5" />
     <MESSAGE value="fonctionnalité 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="fonctionnalité 6" />
+    <MESSAGE value="fonctionnalité 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="fonctionnalité 8" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tweet_collect/HelloWorld.py" />
@@ -486,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_collection/collect_candidate_actuality_tweets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="66" />
+        <state relative-caret-position="405">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="66" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
             <marker date="1542272844561" expanded="true" signature="1103:1104" ph="..." />
@@ -498,7 +504,7 @@
     <entry file="file://$PROJECT_DIR$/tweet_collection/_main_.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -510,8 +516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_analysis/text_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="120">
+          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -520,10 +526,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="8" selection-end-line="19" />
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="58" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#11#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
