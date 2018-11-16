@@ -21,12 +21,12 @@ def collect(mot_cle):
 def collect_by_user(user_id):
     connexion = connect.twitter_setup()
     statuses = connexion.user_timeline(id = user_id, count = 200)
-    for status in statuses:
-        print(status)
+    #for status in statuses:
+        #print(status)
         #print(status.text)
     return statuses
 
-collect_by_user(25073877)
+#collect_by_user(25073877)
 
 class StdOutListener(StreamListener):
     def on_data(self, data):
