@@ -20,10 +20,25 @@ def collect_to_pandas_dataframe():
 
 data=collect_to_pandas_dataframe()
 
-rt_max  = np.max(data['RTs'])
-rt  = data[data.RTs == rt_max].index[0]
+print(data)
+
 
 # Max RTs:
+rt_max  = np.max(data['RTs'])
+rt  = data[data.RTs == rt_max].index[0]
 print("The tweet with more retweets is: \n{}".format(data['tweet_textual_content'][rt]))
 print("Number of retweets: {}".format(rt_max))
 print("{} characters.\n".format(data['len'][rt]))
+
+
+#le plus récent
+plus_recent=np.max(data['Date'])
+rt=data[data.Date == plus_recent].index[0]
+print("The most recent tweet is : \n{}".format(data['tweet_textual_content'][rt]))
+print("Published {}.\n".format(plus_recent))
+
+#le plus liké
+plus_like=np.max(data['Likes'])
+rt=data[data.Likes == plus_like].index[0]
+print("The most liked tweet is : \n{}".format(data['tweet_textual_content'][rt]))
+print("Number of likes: {}.\n".format(plus_like))
