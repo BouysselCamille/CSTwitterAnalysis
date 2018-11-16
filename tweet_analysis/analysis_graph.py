@@ -8,19 +8,17 @@ import numpy as np
 from tweet_analysis.sentiment_analysis import collect_to_pandas_dataframe
 import matplotlib.pyplot as plt
 
+import numpy as np
+import pandas as pd
+import seaborn as sns
+sns.set(style="whitegrid")
 
+rs = np.random.RandomState(365)
+values = rs.randn(365, 4).cumsum(axis=0)
+dates = pd.date_range("1 1 2016", periods=365, freq="D")
+data = pd.DataFrame(values, dates, columns=["A", "B", "C", "D"])
+data = data.rolling(7).mean()
 
-#Collecting
-data_trump,tweets_trump=collect_to_pandas_dataframe("@realDonaldTrump")
-data_hilary,tweets_hilary=collect_to_pandas_dataframe("@HillaryClinton")
-
-#Analysing Data
-
-#Graph
-tpol_trump = pd.Series(data=data_trump['Sentiment'].values, index=data_trump['Date'])
-tpol_hilary = pd.Series(data=data_hilary['Sentiment'].values, index=data_hilary['Date'])
-tpol_trump.plot(figsize=(16,4), label="Trump", legend=True)
-tpol_hilary.plot(figsize=(16,4), label="Clinton", legend=True)
-
+sns.lineplot(data=data, palette="tab10", linewidth=2.5)
 plt.show()
-plt.close()
+

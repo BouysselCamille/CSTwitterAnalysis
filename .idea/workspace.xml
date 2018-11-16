@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edb05e7e-fd30-4857-8220-1ad00afd820e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tweet_analysis/analysis_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweet_collection/credentials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet_analysis/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_analysis/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweet_analysis/analysis_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweet_analysis/analysis_graph.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,26 +34,26 @@
         <counts>
           <entry key="json" value="3" />
           <entry key="key" value="1" />
-          <entry key="md" value="106" />
-          <entry key="py" value="7184" />
-          <entry key="txt" value="98" />
+          <entry key="md" value="173" />
+          <entry key="py" value="7223" />
+          <entry key="txt" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="3" />
-          <entry key="PLAIN_TEXT" value="205" />
-          <entry key="Python" value="7184" />
+          <entry key="PLAIN_TEXT" value="275" />
+          <entry key="Python" value="7223" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="json" value="12" />
           <entry key="key" value="2" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="png" value="1" />
           <entry key="pub" value="1" />
-          <entry key="py" value="63" />
+          <entry key="py" value="64" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
@@ -62,8 +61,8 @@
         <counts>
           <entry key="Image" value="1" />
           <entry key="JSON" value="12" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="62" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="63" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
@@ -96,7 +95,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
@@ -109,10 +108,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweet_analysis/text_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="70" selection-start-line="8" selection-end-line="8" selection-end-column="70" />
+            <state relative-caret-position="241">
+              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -133,16 +141,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis_graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="313">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#11#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -179,7 +192,6 @@
         <option value="$PROJECT_DIR$/tweet_collection/credentials.py" />
         <option value="$PROJECT_DIR$/CandidateData/keywords_candidate_n.txt" />
         <option value="$PROJECT_DIR$/CandidateData/hashtag_candidate_n.txt" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tweet_collection/queries.py" />
         <option value="$PROJECT_DIR$/tweet_collection/s.py" />
         <option value="$PROJECT_DIR$/tweet_collect/s.py" />
@@ -190,8 +202,9 @@
         <option value="$PROJECT_DIR$/tweet_collection/_main_.py" />
         <option value="$PROJECT_DIR$/tweet_analysis/text_analysis.py" />
         <option value="$PROJECT_DIR$/tweet_analysis/sentiment_analysis.py" />
-        <option value="$PROJECT_DIR$/tweet_analysis/analysis_graph.py" />
         <option value="$PROJECT_DIR$/tweet_analysis/analysis.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/tweet_analysis/analysis_graph.py" />
       </list>
     </option>
   </component>
@@ -259,7 +272,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.analysis">
+  <component name="RunManager" selected="Python.analysis_graph">
     <configuration name="_main_" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="twitterPredictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -374,8 +387,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analysis" />
         <item itemvalue="Python.analysis_graph" />
+        <item itemvalue="Python.analysis" />
         <item itemvalue="Python.sentiment_analysis" />
         <item itemvalue="Python.text_analysis" />
         <item itemvalue="Python._main_" />
@@ -433,7 +446,8 @@
     <MESSAGE value="fonctionnalité 6" />
     <MESSAGE value="fonctionnalité 8" />
     <MESSAGE value="fonctionnalité 9" />
-    <option name="LAST_COMMIT_MESSAGE" value="fonctionnalité 9" />
+    <MESSAGE value="fonctionnalité 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="fonctionnalité 10" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tweet_collect/HelloWorld.py" />
@@ -456,7 +470,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_collection/queries.py" />
     <entry file="file://$PROJECT_DIR$/tweet_collect/s.py" />
-    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/key.pub" />
     <entry file="file://$PROJECT_DIR$/key" />
     <entry file="file://$PROJECT_DIR$/tweet_collection/tweet_collect_whole.py">
@@ -528,16 +541,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis_graph.py">
+    <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="555">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="e#11#40#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -554,20 +571,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweet_analysis/text_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" selection-start-line="8" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="241">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis.py">
+    <entry file="file://$PROJECT_DIR$/tweet_collection/credentials.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tweet_analysis/analysis_graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="313">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#11#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
