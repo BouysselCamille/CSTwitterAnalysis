@@ -1,4 +1,4 @@
-"""fonctionnalité 10"""
+"""fonctionnalité 9"""
 
 def analyse_set_tweets(data):
     nb_de_tweets = len(data)
